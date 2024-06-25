@@ -1,0 +1,58 @@
+//Estrutura condicional 
+//if
+
+const readline = require('readline-sync');
+let opcao = parseInt (readline.question('Digite: 1 - Cadastrar e 2 - Sair >>'));
+
+if (opcao == 1){
+    console.log('Cadastrar');
+} else if (opcao == 2){
+    console.log('Sair');
+}else{
+    console.log('Opção inválida');
+}
+
+//Estrutura switch case
+
+ switch(opcao){
+     case 1:
+         console.log('Cadastrar');
+         break;
+     case 2:
+         console.log('Sair');
+         break;
+     default:
+         console.log('Opção inválida');
+ }
+
+//Operador ternário
+
+let idade = parseInt (readline.question('Digite sua idade:'));
+let aviso;
+aviso = (idade >= 18 ) ? (aviso = 'Você pode jogar') : (aviso = 'Você não pode jogar');
+console.log(aviso); 
+
+//Loop while 
+
+i = 0; //i é a variavel que define o while 
+
+while (i < 5) {
+    console.log('O valor de i = ', i);
+
+    i = i + 1;
+}
+console.log('Fim do programa');
+
+//Exercicio
+
+opcao = 1
+
+while (opcao == 1) {
+
+    console.log('Bem vindo ao Fap');
+
+    opcao = parseInt (readline.question('Digite: 1 - Cadastrar e 2 - Sair >>'));
+
+}
+console.log('Programa finalizado!!!')
+
