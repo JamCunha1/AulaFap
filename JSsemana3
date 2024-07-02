@@ -56,3 +56,108 @@ while (opcao == 1) {
 }
 console.log('Programa finalizado!!!')
 
+// Repetição DO/While
+
+
+const readline = require('readline-sync');
+
+i = 0; //i é a variavel que define o while 
+
+console.log('------------------Inicio do Programa------------------------');
+
+while (i < 5) {
+    
+    console.log('O valor de i = ', i);
+
+    i = i + 1;
+}
+console.log('--------------------Fim do programa-------------------------');
+console.log('Início');
+i = 0;
+
+//Repetição do/while
+
+do { i = i + 1; 
+    console.log('O valor de i = ', i);
+} while (i < 5);
+console.log('Fim');
+console.log('Inicio');
+
+for (var i = 0 ; i < 5; i++) {// i ++ ou i + 1, tanto faz, representam a mesma coisa
+    console.log('O valor de i = ', i);
+}
+console.log('Fim');
+
+
+
+//Função
+
+function exemploDeFuncao(parametro) {
+
+    console.log(parametro);
+}
+var argumento = "arg";
+
+exemploDeFuncao(argumento); 
+
+function soma(parametro1, parametro2) {
+
+    resultado = parametro1 + parametro2;
+
+    console.log(resultado);
+
+}
+var n1 = 10;
+var n2 = 2;
+
+soma(n1, n2);
+soma(70, 30);
+
+const readline = require('readline-sync')
+
+function soma(parametro1, parametro2) {
+
+        resultado = parametro1 + parametro2;
+    
+        console.log(resultado);
+}
+
+console.log('Inicio');
+opcao = true;
+
+while(opcao) {
+
+    numero1 = parseInt(readline.question("Digite um número: "));
+    numero2 = parseInt(readline.question("Digite outro número: "));
+    soma(numero1, numero2);
+
+    operacao = parseInt(readline.question("Digite 1 para continuar e 2 para sair: "));
+
+    if (operacao == 2) {
+        opcao = false;
+    }
+}
+
+
+////Dando erro
+
+const readline = require('readline-sync');
+
+let opcao = parseInt(readline.question('Digite 1 - para adicionar, 2 - para remover e 3 - para listar: '));
+
+let cadastro = []
+
+while (opcao = 1){
+    let dado =  readline.question('Digite seu Nome: ');
+    cadastro.push(dado);
+    console.log(parseInt(readline.question('Digite 1 - para adicionar, 2 - para remover e 3 - para listar: ')));
+}
+    if (opcao = 2) {
+    let dado = readline.question('Digite o nome que deseja remover: ');
+    cadastro.pop(dado); 
+    console.log(parseInt(readline.question('Digite 1 - para adicionar, 2 - para remover e 3 - para listar: ')));
+    } else 
+    console.log('Você está saindo do programa sua lista é: ', cadastro);
+
+
+
