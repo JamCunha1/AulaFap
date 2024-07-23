@@ -30,6 +30,12 @@ do {
             filmes.forEach((filme, index) => {
                 console.log(`${index + 1}. ${filme}`);  
             });
+             if (length.filmes2 > 0) {
+//                 console.log(`Lista dos filmes do diretor ${diretor2.name}: `);
+//                 filmes2.forEach((filme2, index) => {
+//                 console.log(`${index + 1}. ${filme2}`);  
+//                 });
+//             }
             alternativa();
             break;
         case 3: 
