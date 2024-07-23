@@ -43,3 +43,13 @@ do {
 }   while (opcao != 4);
 console.log('Você saiu do programa.')
 
+
+TENTATIVA COM OBJETOS DENTRO DE OBJETOS 
+
+diretor = {}
+
+diretor.nome = readline.question('Digite o nome do diretor: ');
+diretor.contador = readline.question('Digite quantos filmes ele dirigiu: ');
+diretor.filmes = {}
+diretor.filmes.nome = [] = readline.question(`Digite o nome do filme que o ${diretor.nome} dirigiu`)
+
