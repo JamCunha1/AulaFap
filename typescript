@@ -1,0 +1,33 @@
+Mensagem 
+
+let mensagemTypeScript:string = 'Olá mundo';
+
+console.log(mensagemTypeScript)
+
+Exercicio 1 
+
+function calcularSoma(a : number, b :number){
+  return a + b;
+}
+
+console.log(calcularSoma(10,10))
+
+Exercicio 2
+
+function contarCaracteres(string){
+  return string.length;
+}
+console.log(contarCaracteres('Jamerson'))
+
+Exercicio 3 
+
+function verificarSinal(number){
+  if (number > 0) {
+    console.log('Numero positivo')
+  } else if (number == 0 ) {
+    console.log('Número igual a zero')
+  } else if (number < 0) {
+    console.log('Numero negativo')
+  }
+}
+console.log(verificarSinal(-2))
