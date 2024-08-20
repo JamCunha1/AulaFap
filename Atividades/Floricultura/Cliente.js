@@ -7,7 +7,7 @@ class Cliente{
         this.age = a
         this.id = i
     }
-    //metodo do classe cliente
+    //metodo da classe cliente
     exibirDetalhes(){
         console.log(this.nome);
         console.log(this.genero);
