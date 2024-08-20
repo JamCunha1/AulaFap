@@ -1,47 +1,12 @@
-class Projeto{
-  idProjeto
-  nomeProjeto
-  dataInicioProjeto
+const readline = require('readline-sync');
 
-  constructor(idProjeto, nomeProjeto, dataInicioProjeto){
-      this.idProjeto = idProjeto;
-      this.nomeProjeto = nomeProjeto;
-      this.dataInicioProjeto = dataInicioProjeto;
-  }
+diretor = {} = [];
 
-  exibirProjeto(){
-      console.log(`Projeto: ${this.idProjeto} - ${this.nomeProjeto} foi iniciado no dia ${this.dataInicioProjeto}`);
-  }
+function menu(){
+    opcao = parseInt(readline.question('Escolha uma opcao\n\n1 - Incluir filme\n2 - Listar filmes\n3 - Incluir diretor\n\n4 - Sair'))
 }
 
-class Alocacao{
-  idProjeto
-  idFuncionario
-  dataInicioAlocacao
-
-  constructor(idProjeto, idFuncionario, dataInicioAlocacao){
-      this.idProjeto = idProjeto;
-      this.idFuncionario = idFuncionario;
-      this.dataInicioAlocacao = dataInicioAlocacao;
-  }
-
-  exibirAlocacao(){
-      console.log(`O projeto ${this.idProjeto} alocado no dia ${this.dataInicioAlocacao}, esta sendo desenvolvido pelo funcionario ${this.idFuncionario} - ${this.nome}. `)
-  }
-}
-
-class Funcionario{
-  idFuncionario
-  nomeFuncionario
-  cargoFuncionario
-
-  constructor(idFuncionario, nomeFuncionario, cargoFuncionario){
-    this.idFuncionario = idFuncionario;
-    this.nomeFuncionario = nomeFuncionario;
-    this.cargoFuncionario = cargoFuncionario;
-  }
-
-  exibirFuncionario(){
-    console.log(`${this.idFuncionario} - ${this.nomeFuncionario} cargo: ${this.cargoFuncionario}`)
-  }
+function IncluirDiretor(){
+    nome = readline.question('Digite o nome do diretor: ')
+    diretor.nome.push(nome)
 }
