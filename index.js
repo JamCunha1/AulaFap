@@ -1,25 +1,18 @@
-const express = require('express');
+//importando express 
+const express = require ('express');
 
+//inicializando o express
 const app = express();
 
-const port = 3000;
+//utilizando o metodo json do express para fazer o parse do body da requisição
+app.use(express.json());
 
-//Definindo uma rota simples
+//rota raiz
 app.get('/', (req, res) => {
-  res.send('Olá Mundo!');
+  res.send("Hello World");
 });
 
-app.get('/meunome', (req, res) => {
-  res.send('Jamerson Avelino da Cunha');
-});
-
-app.get('/rota2/:num', (req, res) => { //Recebe o parametro 1
-  const numero = parseInt(req.params.num);
-  res.send(`O numero que você passou é ${numero}`);
-})
-
-//Iniciando o servidor 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-
+//Servidor rodando na porta 3000
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
 });
